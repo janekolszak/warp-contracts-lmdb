@@ -11,6 +11,9 @@
   "engines": {
     "node": ">=16.5"
   },
+  "bin": {
+    "warp-contracts-lmdb-rewrite": "tools/rewrite.sh"
+  },
   "scripts": {
     "build:cjs": "tsc -b tsconfig.json",
     "build:types": "tsc -b tsconfig.types.json",
@@ -61,7 +64,8 @@
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^29.0.3",
-    "typescript": "^4.7.4"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
   },
   "peerDependencies": {
     "warp-contracts": "^1.2.31"
